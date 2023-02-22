@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostelShop</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<header>
+    <div class="menuburger"><span class="material-symbols-outlined">
+        menu
+        </span>
+    <div class="list">
+        <ul>
+            <li><a href="">Women</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Jeans</a></li>
+            <li><a href="">Clearance</a></li>
+        </ul>
+        <a href=""><button class="register">Register</button></a>
+        <a href=""><button class="signup">Sign In</button></a>
+        <a href=""><div><i class="fas fa-location"></i>Store Locator</div></a>
+    </div>
+    <!-- <div class="loginbtn">
+        <div class="btn">
+            
+        </div>
+        <div></div>
+    </div> -->
+    </div>
+    <div class="navigation">
+        <ul class="menu">
+            <li class="menu-items"><a href="#">Women</a>
+            
+                <ul class="sub-menu">
+                    <div>
+                        <li class="sub-items"><a href="#">Shop All Women</a></li>
+                    <li class="sub-items"><a href="#">New Arrivels</a></li>
+                    <li class="sub-items more"><a class="more-btn" href="#">Tops <i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Tops</a></li>
+                        <li class="more-items"><a href="#">Hoodies + Sweatshirts</a></li>
+                        <li class="more-items"><a href="#">Shirts + Blouses</a></li>
+                        <li class="more-items"><a href="#">Graphic Tees</a></li>
+                        <li class="more-items"><a href="#">Sweaters</a></li>
+                        <li class="more-items"><a href="#">Knit Tops</a></li>
+                        <li class="more-items"><a href="#">Polos</a></li>
+                        <li class="more-items"><a href="#">Camis + Tanks</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more"><a class="more-btn" href="#">Bottons <i class="fas fa-angle-right"></i></a>
+                        <ul class="more-menu">
+                            <li class="morw-items"><a href="#">Shop All Bottoms</a></li>
+                            <li class="more-items"><a href="#">Jeans</a></li>
+                            <li class="more-items"><a href="#">Pants</a></li>
+                            <li class="more-items"><a href="#">Joggers + Sweatpants</a></li>
+                            <li class="more-items"><a href="#">Leggings + Active</a></li>
+                            <li class="more-items"><a href="#">Skirts</a></li>
+                            <li class="more-items"><a href="#">Shorts</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-items more"><a class="more-btn" href="#">Accessories <i class="fas fa-angle-right"></i></a>
+                        <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Accessories</a></li>
+                        <li class="more-items"><a href="#">$10 + Under</a></li>
+                        <li class="more-items"><a href="#">Hats</a></li>
+                        <li class="more-items"><a href="#">Fragrance + Beauty</a></li>
+                        <li class="more-items"><a href="#">Hair Accessories</a></li>
+                        <li class="more-items"><a href="#">Socks</a></li>
+                        <li class="more-items"><a href="#">Belts</a></li>
+                        <li class="more-items"><a href="#">Shoes</a></li>
+                        <li class="more-items"><a href="#">Watches + Jewelry</a></li>
+                        <li class="more-items"><a href="#">Home + Gifts</a></li>
+                        <li class="more-items"><a href="#">Sunglasses</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-items more"><a class="more-btn" href="#">Hoodies + Sweats <i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Hoodies + Sweats</a></li>
+                        <li class="more-items"><a href="#">Hoodies + Sweatshirts</a></li>
+                        <li class="more-items"><a href="#">Joggers + Sweatpants</a></li>
+                        <li class="more-items"><a href="#">Fleece + Lounge Shorts</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more"><a class="more-btn" href="#">Loungewear <i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Loungewear</a></li>
+                        <li class="more-items"><a href="#">Tops</a></li>
+                        <li class="more-items"><a href="#">Bottoms</a></li>
+                        <li class="more-items"><a href="#">Sleepwear</a></li>
+                        <li class="more-items"><a href="#">Leggings</a></li>
+                        <li class="more-items"><a href="#">Bras + Undies</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more"><a class="more-btn" href="#">Swimwear <i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Swimwear</a></li>
+                        <li class="more-items"><a href="#">Bikini Tops</a></li>
+                        <li class="more-items"><a href="#">Bikini Bottoms</a></li>
+                        <li class="more-items"><a href="#">One Piece Swimsuits</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more"><a class="more-btn" href="#">Dresses + Rompers <i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Dresses + Rompers</a></li>
+                        <li class="more-items"><a href="#">Dresses</a></li>
+                        <li class="more-items"><a href="#">Rompers</a></li>
+                        <li class="more-items"><a href="#">Matching Sets</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more"><a class="more-btn" href="#">Outerwear<i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Outerwear</a></li>
+                        <li class="more-items"><a href="#">Bomber</a></li>
+                        <li class="more-items"><a href="#">Denim Jackets</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more"><a class="more-btn" href="#">Bralettes + Undies <i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Bralettes + Undies</a></li>
+                        <li class="more-items"><a href="#">Bralettes</a></li>
+                        <li class="more-items"><a href="#">Undies</a></li>
+                    </ul></li>
+                    <li class="sub-items"><a href="#">Fragrance</a></li>
+                    </div>
+                    <div>
+                        <li class="sub-items"><a href="#">Collections</a></li>
+                    <li class="sub-items"><a href="#">#TrendingNow</a></li>
+                    <li class="sub-items"><a href="#">aero dwentme essentials</a></li>
+                    <li class="sub-items"><a href="#">The NBA Shop</a></li>
+                    <li class="sub-items"><a href="#">The Cargo Edit</a></li>
+                    <li class="sub-items"><a href="#">Aero impact</a></li>
+                    <li class="sub-items"><a href="#">Matching Sets</a></li>
+                    <li class="sub-items"><a href="#">Online Only</a></li>
+                    <li class="sub-items"><a href="#">Uniform</a></li>
+                    </div>
+                    <div>
+                        <img src="women.png" alt="">
+                    </div>
+                </ul>
+                
+            
+            
+            </li>
+            <li class="menu-items"><a href="#">Men</a>
+            
+                <ul class="sub-menu1">
+                    <div>
+                        <li class="sub-items"><a href="#">Shop All Men</a></li>
+                    <li class="sub-items"><a href="#">New Arrivels</a></li>
+                    <li class="sub-items more1"><a class="more-btn" href="#">Tops <i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Tops</a></li>
+                        <li class="more-items"><a href="#">Hoodies + Sweatshirts</a></li>
+                        <li class="more-items"><a href="#">Shirts</a></li>
+                        <li class="more-items"><a href="#">Graphic Tees</a></li>
+                        <li class="more-items"><a href="#">Tees</a></li>
+                        <li class="more-items"><a href="#">Polos</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more1"><a class="more-btn" href="#">Bottons <i class="fas fa-angle-right"></i></a>
+                        <ul class="more-menu">
+                            <li class="morw-items"><a href="#">Shop All Bottoms</a></li>
+                            <li class="more-items"><a href="#">Jeans</a></li>
+                            <li class="more-items"><a href="#">Pants</a></li>
+                            <li class="more-items"><a href="#">Joggers + Sweatpants</a></li>
+                            <li class="more-items"><a href="#">Shorts</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-items more1"><a class="more-btn" href="#">Accessories <i class="fas fa-angle-right"></i></a>
+                        <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Accessories</a></li>
+                        <li class="more-items"><a href="#">$10 + Under</a></li>
+                        <li class="more-items"><a href="#">Hats</a></li>
+                        <li class="more-items"><a href="#">Cologne</a></li>
+                        <li class="more-items"><a href="#">Socks</a></li>
+                        <li class="more-items"><a href="#">Belts</a></li>
+                        <li class="more-items"><a href="#">Watches</a></li>
+                        <li class="more-items"><a href="#">Sunglasses</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-items more1"><a class="more-btn" href="#">Hoodies + Sweats <i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Hoodies + Sweats</a></li>
+                        <li class="more-items"><a href="#">Hoodies + Sweatshirts</a></li>
+                        <li class="more-items"><a href="#">Joggers + Sweatpants</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more1"><a class="more-btn" href="#">Activewear<i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Activewear</a></li>
+                        <li class="more-items"><a href="#">Tops</a></li>
+                        <li class="more-items"><a href="#">Bottoms</a></li>
+                        <li class="more-items"><a href="#">Underwear</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more1"><a class="more-btn" href="#">Swimwear</a></li>
+                    <li class="sub-items more1"><a class="more-btn" href="#">Outerwear<i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Outerwear</a></li>
+                        <li class="more-items"><a href="#">Bomber</a></li>
+                        <li class="more-items"><a href="#">Denim Jackets</a></li>
+                        <li class="more-items"><a href="#">Jackets</a></li>
+                        <li class="more-items"><a href="#">Shacket</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more1"><a class="more-btn" href="#">Underwear</a></li>
+                    <li class="sub-items"><a href="#">Cologne</a></li>
+                    </div>
+                    <div>
+                        <li class="sub-items"><a href="#">Collections</a></li>
+                    <li class="sub-items"><a href="#">#TrendingNow</a></li>
+                    <li class="sub-items"><a href="#">aero dwentme essentials</a></li>
+                    <li class="sub-items"><a href="#">The NBA Shop</a></li>
+                    <li class="sub-items"><a href="#">The Cargo Edit</a></li>
+                    <li class="sub-items"><a href="#">Aero impact</a></li>
+                    <li class="sub-items"><a href="#">Matching Sets</a></li>
+                    <li class="sub-items"><a href="#">Online Only</a></li>
+                    <li class="sub-items"><a href="#">Uniform</a></li>
+                    </div>
+                    <div>
+                        <img src="men.png" alt="">
+                    </div>
+                </ul>
+                
+            <li class="menu-items"><a href="#">Jeans</a>
+                <ul class="sub-menu2">
+                    <div>
+                        <li class="sub-items"><a href="#">Shop All Jeans</a></li>
+                    <li class="sub-items more2"><a class="more-btn" href="#">Women<i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Women</a></li>
+                        <li class="more-items"><a href="#">Buy 1, Get 1 Free</a></li>
+                        <li class="more-items"><a href="#">Wide Leg Jeans</a></li>
+                        <li class="more-items"><a href="#">Low + Loose Jeans</a></li>
+                        <li class="more-items"><a href="#">Flare Jeans</a></li>
+                        <li class="more-items"><a href="#">Mom Jeans</a></li>
+                        <li class="more-items"><a href="#">90's Baggy Jeans</a></li>
+                        <li class="more-items"><a href="#">Jeggings</a></li>
+                        <li class="more-items"><a href="#">Curvy Jeans</a></li>
+                        <li class="more-items"><a href="#">Skinny Jeans</a></li>
+                        <li class="more-items"><a href="#">Bootcut Jeans</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more2"><a class="more-btn" href="#">Men<i class="fas fa-angle-right"></i></a>
+                        <ul class="more-menu">
+                            <li class="morw-items"><a href="#">Shop All Men</a></li>
+                            <li class="more-items"><a href="#">Buy 1, Get 1 Free</a></li>
+                            <li class="more-items"><a href="#">Skinny Jeans</a></li>
+                            <li class="more-items"><a href="#">Super Skinny Jeans</a></li>
+                            <li class="more-items"><a href="#">Athletic Jeans</a></li>
+                            <li class="more-items"><a href="#">Slim Jeans</a></li>
+                            <li class="more-items"><a href="#">Straight Jeans</a></li>
+                            <li class="more-items"><a href="#">Relexed Jeans</a></li>
+                            <li class="more-items"><a href="#">Denim Jeans</a></li>
+                        </ul>
+                    </li>
+                    
+                    </div>
+                    
+                    <div>
+                        <img src="jeans.png" alt="">
+                    </div>
+                </ul>
+                
+            </li>
+            <li class="menu-items"><a href="#">Clearance</a>
+                <ul class="sub-menu2">
+                    <div>
+                        <li class="sub-items"><a href="#">Shop All Jeans</a></li>
+                    <li class="sub-items more2"><a class="more-btn" href="#">Women<i class="fas fa-angle-right"></i></a>
+                    <ul class="more-menu">
+                        <li class="morw-items"><a href="#">Shop All Women</a></li>
+                        <li class="more-items"><a href="#">Buy 1, Get 1 Free</a></li>
+                        <li class="more-items"><a href="#">Wide Leg Jeans</a></li>
+                        <li class="more-items"><a href="#">Low + Loose Jeans</a></li>
+                        <li class="more-items"><a href="#">Flare Jeans</a></li>
+                        <li class="more-items"><a href="#">Mom Jeans</a></li>
+                        <li class="more-items"><a href="#">90's Baggy Jeans</a></li>
+                        <li class="more-items"><a href="#">Jeggings</a></li>
+                        <li class="more-items"><a href="#">Curvy Jeans</a></li>
+                        <li class="more-items"><a href="#">Skinny Jeans</a></li>
+                        <li class="more-items"><a href="#">Bootcut Jeans</a></li>
+                    </ul>
+                    </li>
+                    <li class="sub-items more2"><a class="more-btn" href="#">Men<i class="fas fa-angle-right"></i></a>
+                        <ul class="more-menu">
+                            <li class="morw-items"><a href="#">Shop All Men</a></li>
+                            <li class="more-items"><a href="#">Buy 1, Get 1 Free</a></li>
+                            <li class="more-items"><a href="#">Skinny Jeans</a></li>
+                            <li class="more-items"><a href="#">Super Skinny Jeans</a></li>
+                            <li class="more-items"><a href="#">Athletic Jeans</a></li>
+                            <li class="more-items"><a href="#">Slim Jeans</a></li>
+                            <li class="more-items"><a href="#">Straight Jeans</a></li>
+                            <li class="more-items"><a href="#">Relexed Jeans</a></li>
+                            <li class="more-items"><a href="#">Denim Jeans</a></li>
+                        </ul>
+                    </li>
+                    
+                    </div>
+                    
+                    <div>
+                        <img src="clearence.png" alt="">
+                    </div>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <a href="#" class="logo"><img src="logo.jpg" alt=""></a>
+    </div>
+    <div class="container">
+        <form action="" class="searchbar">
+            <input type="text" placeholder="Search" name="q">
+            <button type="submit"><img src="search.png" alt=""></button>
+        </form>
+        <a href=""><span class="material-symbols-outlined">
+            location_on
+            </span></a>
+        <a href=""><span class="material-symbols-outlined">
+            person_filled
+            </span></a>
+        <a href="">
+            <span class="material-symbols-outlined">
+                shopping_bag
+                </span>
+        </a>
+    </div>
+</header>
+<body>
+   
+</body>
+</html>
