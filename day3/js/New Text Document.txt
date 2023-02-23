@@ -1,0 +1,28 @@
+$('.menuburger').click(function(e){
+    e.preventDefault()
+    $(this).toggleClass("click");
+    $('.menuburger .list').toggleClass("show");
+});
+$('.women-btn').click(function(e){
+    e.preventDefault()
+    $('.menuburger .list ul .women-show').toggleClass("show");
+    $('.menuburger .list ul .first').toggleClass("rotate");
+});
+$('.men-btn').click(function(e){
+    e.preventDefault()
+    $('.menuburger .list ul .men-show').toggleClass("show1");
+    $('.menuburger .list ul .second').toggleClass("rotate");
+});
+$('.jeans-btn').click(function(e){
+    e.preventDefault()
+    $('.menuburger .list ul .jeans-show').toggleClass("show2");
+    $('.menuburger .list ul .second').toggleClass("rotate");
+});
+$('.clearance-btn').click(function(e){
+    e.preventDefault()
+    $('.menuburger .list ul .clearance-show').toggleClass("show3");
+    $('.menuburger .list ul .second').toggleClass("rotate");
+});
+$('.menuburger .list li').click(function(e){
+    $(this).addClass("active").siblings().removeClass("active");
+});
