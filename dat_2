@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="women.css">
+<body>
+    <nav id="navbar">
+        <h2>Women</h2>
+        <a href="#">Tops</a>
+        <a href="#">Bottoms</a>
+        <a href="#">Dresses + Rompers </a>
+        <a href="#">Hoodies + Sweats </a>
+        <a href="#">Loungewear Swimwear </a>
+        <a href="#">Outerwear </a>
+        <a href="#">Accessories </a>
+        <a href="#">Bralettes + Undies</a>
+        <a href="#">Collections</a>
+    </nav>
+    <div id="nav2">
+      <div class="gilter">
+        <button>show filter</button>
+      </div>
+
+      <!--  -->
+      <p id="itemnm">(0 items)</p>
+      <!--  -->
+      <button id="grid3">|||
+        </button>
+        <button id="grid4">||||
+        </button>
+      <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Sort By</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Featured</a>
+            <a href="#">Best Sellers</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">Price High to Low</a>
+            <a href="#">Price Low to High</a>
+             
+          </div>
+        </div>
+    </div>
+    <!-- mid part -->
+    <div id="contaner">
+      <div>
+        <img src="https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw69cd452a/80643785_523_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg" alt="error">
+        <p>Notch-Neck Shrunken Tee
+          </p>
+          <p><span>$10.00  </span><span>      Comp. Value: $24.95</span></p>
+          <p>*****</p>
+      </div>
+      
+    </div>
+    
+</body>
+<script src="women.js"></script>
+</html>
+
