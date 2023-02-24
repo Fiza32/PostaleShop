@@ -1,269 +1,351 @@
 body {
-    background: #fff;
-    color: #2e3133;
-    overflow-x: hidden;
-    font-family: "Visuelt Pro", Arial, sans-serif;
-    font-weight: 100;
-    min-width: 320px;
+  background: #fff;
+  color: #2e3133;
+  overflow-x: hidden;
+  font-family: 'Visuelt Pro', Arial, sans-serif;
+  font-weight: 100;
+  min-width: 320px;
 }
 
 ul li img {
-    display: inline-block;
-    vertical-align: middle; /* This aligns the image with the text */
+  display: inline-block;
+  vertical-align: middle;
 }
 
-  ul li p {
-    display: inline-block;
-    margin-left: 10px; /* This adds some space between the image and text */
+ul li p {
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .cont-img {
-    height: 25px;
-    width: 24px;
+  height: 25px;
+  width: 24px;
 }
 
 footer {
-    background-color: #fff;
-    font-family: "Visuelt Pro", Arial, sans-serif;
-    border-top: 1px solid #e0e0e0;
-    clear: both;
-    display: block;
+  background-color: #fff;
+  font-family: 'Visuelt Pro', Arial, sans-serif;
+  border-top: 1px solid #e0e0e0;
+  clear: both;
+  display: block;
 }
 
 .footer-container {
-    box-sizing: border-box;
-    margin: auto;
-    width: calc(100% - 20px);
-    max-width: 1280px;
-    /* display: -ms-flexbox; */
-    display: flex;
-    /* -ms-flex-wrap: wrap; */
-    flex-wrap: wrap;
-    /* -ms-flex-pack: justify; */
-    justify-content: space-between;
-    font-family: "Visuelt Pro", Arial, sans-serif;
-    font-size: 0.875rem;
-    line-height: 140%;
-    font-weight: normal;
+  box-sizing: border-box;
+  margin: auto;
+  width: calc(100% - 20px);
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Visuelt Pro', Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 140%;
+  font-weight: normal;
 }
 
 .footer-container .footer-item {
-    box-sizing: border-box;
-    display: block;
-    margin: 3.125rem 0;
-    max-width: 17%;
-    width: 100%;
-    /* vertical-align: top; */
-    padding: 0.375rem 0.3125rem 0.375rem 0;
+  box-sizing: border-box;
+  display: block;
+  margin: 3.125rem 0;
+  max-width: 17%;
+  width: 100%;
+  padding: 0.375rem 0.3125rem 0.375rem 0;
 }
 
 div {
-    display: block;
+  display: block;
 }
 
 .footer-container ul {
-    padding: 0;
-    list-style: none;
-    margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0;
 }
 
 .footer-container ul li {
-    padding-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 
 .footer-container ul li a {
-    /* display: -ms-flexbox; */
-    display: flex;
+  display: flex;
 }
 
 .footer-container a {
-    font-family: "Visuelt Pro", Arial, sans-serif;
-    font-size: 0.875rem;
-    line-height: 140%;
-    font-weight: normal;
-    color: #000;
+  font-family: 'Visuelt Pro', Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 140%;
+  font-weight: normal;
+  color: #000;
 }
 
 a {
-    outline: medium none;
-    overflow: hidden;
-    text-decoration: none;
-    color: #656a6e;
+  outline: medium none;
+  overflow: hidden;
+  text-decoration: none;
+  color: #656a6e;
 }
 
 .footer-container .footer-item.footer-social-and-email {
-    max-width: 20.3125rem;
+  max-width: 20.3125rem;
 }
 
 .footer-bottom {
-    background: #f2f2f2;
-    padding: 0.9375rem 0;
-    font-family: "Visuelt Pro", Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 0.9375rem 0;
+  font-family: 'Visuelt Pro', Arial, sans-serif;
 }
 
 .footer-bottom .footer-bottom-list {
-    box-sizing: border-box;
-    margin: auto;
-    width: calc(100% - 20px);
-    max-width: 1280px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-family: "Visuelt Pro", Arial, sans-serif;
-    font-size: 0.875rem;
-    line-height: 2;
-    letter-spacing: -0.1px;
-    color: #000;
-    text-align: center;
-    list-style: none;
-    font-weight: 400;
-    padding: 0;
+  box-sizing: border-box;
+  margin: auto;
+  width: calc(100% - 20px);
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Visuelt Pro', Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 2;
+  letter-spacing: -0.1px;
+  color: #000;
+  text-align: center;
+  list-style: none;
+  font-weight: 400;
+  padding: 0;
 }
 
 .footer-bottom .footer-bottom-list li:first-child {
-    text-align: left;
+  text-align: left;
 }
 
 .footer-bottom .footer-bottom-list a {
-    color: #000;
-    font-weight: 400;
-    font-family: "Visuelt Pro", Arial, sans-serif;
+  color: #000;
+  font-weight: 400;
+  font-family: 'Visuelt Pro', Arial, sans-serif;
 }
 
 .footer-container ul.footer-email-singup {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer-container ul li:last-child {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .footer-container ul.footer-email-singup h5 {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .footer-email-singup form {
-    position: relative;
+  position: relative;
 }
 
 form {
-    display: block;
-    margin-top: 0em;
-}
-
-.footer-email-singup .footer-email-singup-policy {
-    margin-top: 1rem;
-    font-size: 12px;
-    line-height: 1rem;
+  display: block;
+  margin-top: 0em;
 }
 
 .content-asset p {
-    line-height: 1.6em;
-    margin: 1em 0;
+  line-height: 1.6em;
+  margin: 1em 0;
 }
 
 p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    letter-spacing: 0.3px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  letter-spacing: 0.3px;
 }
 
 .footer-email-singup form label {
-    position: absolute;
-    left: 1rem;
-    top: 1.25px;
-    font-weight: 400;
-    font-size: 10px;
-    color: #828282;
-    margin: 0;
-    line-height: 13px;
-    text-transform: capitalize;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s all ease;
+  position: absolute;
+  left: 1rem;
+  top: 1.25px;
+  font-weight: 400;
+  font-size: 10px;
+  color: #828282;
+  margin: 0;
+  line-height: 13px;
+  text-transform: capitalize;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all ease;
 }
 
-button, input, optgroup, select, textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0;
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
 }
 
 label {
-    display: block;
-    font-family: "Visuelt Pro", Arial, sans-serif;
-    cursor: default;
+  display: block;
+  font-family: 'Visuelt Pro', Arial, sans-serif;
+  cursor: default;
 }
 
 .footer-email-singup form input.input-text {
-    border: 2px solid #e0e0e0 !important;
-    padding: 0.625rem 7.25rem 0.625rem 1rem !important;
-    border-radius: 6.25rem;
-    height: 2.8125rem;
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-    color: #000;
-    transition: 0.3s all ease;
-    margin-bottom: 5px;
+  border: 2px solid #e0e0e0 !important;
+  padding: 0.625rem 7.25rem 0.625rem 1rem !important;
+  border-radius: 6.25rem;
+  height: 2.8125rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #000;
+  transition: 0.3s all ease;
+  margin-bottom: 5px;
 }
 
-input[type="email"] {
-    text-indent: 0;
-    width: 100%;
-    letter-spacing: 0.3px;
-    font-family: "Visuelt Pro" !important;
-    box-sizing: border-box;
+input[type='email'] {
+  text-indent: 0;
+  width: 100%;
+  letter-spacing: 0.3px;
+  font-family: 'Visuelt Pro' !important;
+  box-sizing: border-box;
 }
 
 .footer-email-singup form .email-signup-btn {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 7.25rem;
-    height: 2.8125rem;
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    letter-spacing: 0.2px;
-    text-transform: capitalize;
-    border-radius: 3.125rem;
-    margin: 0;
-    transition: 0.3s all ease;
-    color: #fff !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7.25rem;
+  height: 2.8125rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  border-radius: 3.125rem;
+  margin: 0;
+  transition: 0.3s all ease;
+  color: #fff !important;
 }
 
 button {
-    display: inline-block;
-    padding: 0.5625rem 0.9375rem;
-    text-align: center;
-    font-family: "Visuelt Pro";
-    box-sizing: border-box;
-    cursor: pointer;
-    background-color: #005eb8;
-    border: 2px solid #005eb8;
-    appearance: button;
+  display: inline-block;
+  padding: 0.5625rem 0.9375rem;
+  text-align: center;
+  font-family: 'Visuelt Pro';
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #005eb8;
+  border: 2px solid #005eb8;
+  appearance: button;
 }
 
 .footer-email-singup form #email-address-error {
-    display: none;
-    background: url(../images/icon-error.jpeg) no-repeat 0 1px;
+  display: none;
+  background: url(../images/icon-error.jpeg) no-repeat 0 1px;
 }
 
-.footer-email-singup form span.error, .footer-email-singup form span.success {
-    padding-left: 1rem;
-    margin-left: 1rem;
+.footer-email-singup form span.error,
+.footer-email-singup form span.success {
+  padding-left: 1rem;
+  margin-left: 1rem;
 }
 
-.error, input.error {
-    border-color: #cc092f;
+.error,
+input.error {
+  border-color: #cc092f;
 }
 
+.footer-container h5 {
+  text-transform: capitalize;
+  color: #1d3451;
+  font-weight: 500;
+  font-family: 'Visuelt Pro', Arial, sans-serif;
+  padding-bottom: 1.5rem;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+}
+
+.footer-container .footer-social-and-email .social-media-links {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-container .footer-social-and-email .social-media-links a img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 8px;
+  fill: #000;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-email-singup .footer-email-singup-policy {
+  margin-top: 1rem;
+  font-size: 12px;
+  line-height: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-email-singup .footer-email-singup-policy {
+    margin-top: 1.25rem;
+    line-height: 140%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-container h5 {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-bottom {
+    padding: 1.25rem 0.9375rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-container .footer-item.account {
+    border-right-width: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-container .footer-item {
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    padding: 1.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-bottom .footer-bottom-list li {
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-bottom .footer-bottom-list {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+  }
+}
