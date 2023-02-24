@@ -64,7 +64,7 @@
                         <input type="search" name="" value="" id="searchInput" placeholder="Search here">
                     </div>
                     <div class="right">
-                        <i class="fa-regular fa-circle-question"></i>
+                        <i class="fa-regular fa-circle-question" id="searchbtn"></i>
                         <i class="fa-regular fa-bell"></i>
                         <img src="../images/profile.png" alt="" style="width:50px;height:50px">
                     </div>
@@ -168,6 +168,8 @@
 
     let url = "https://63c9170d320a0c4c9540575f.mockapi.io/products";
 
+    let productArr = [];
+
 document.getElementById("addProductbtn").addEventListener("click",function(){
     document.querySelector(".popup").classList.add("active");
 })
@@ -226,7 +228,8 @@ async function postProduct(product){
             body:JSON.stringify(product)
         });
         let out = await res.json();
-        console.log(out)
+       
+        console.log(out);
       
     }catch(err){
         alert(JSON.stringify(err))
@@ -240,6 +243,7 @@ async function getdata(){
    try{
     let res = await fetch(url);
     res = await res.json();
+    productArr = res;
     console.log(res);
     display(res)
 
@@ -296,7 +300,27 @@ function display(data){
     });
 
   
+//  searching
 
+
+document.getElementById("searchbtn").addEventListener("click",function(){
+
+    let searchtext = document.getElementById("searchInput").value;
+    let filterarr = productArr.filter((ele)=>{
+        if(ele.name.toLowerCase().includes(searchtext.toLowerCase())){
+            return true;
+        }
+
+        // if(ele.category==searchtext){
+        //     return true
+        // }
+    })
+
+   
+
+    display(filterarr)
+
+})
 
 
 }
