@@ -1,0 +1,117 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Aeropostale Sign-In</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Aeropostale Sign-In</h1>
+		<form>
+			<label for="email">Email Address</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+
+			<input type="checkbox" id="remember-me" name="remember-me">
+			<label for="remember-me">Remember Me</label>
+
+			<button type="submit">Sign In</button>
+		</form>
+
+		<div class="social-login">
+			<p>Or log in using your account from:</p>
+			<a href="#" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+		</div>
+	</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aeropostale Sign-In</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>If you are aleready a user Sign-In</h1>
+		<form>
+			<label for="email">Email Address</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+
+			<input type="checkbox" id="remember-me" name="remember-me">
+			<label for="remember-me">Remember Me</label>
+
+			<button type="submit" onclick="signIn()">Sign In</button>
+		</form>
+
+		<div class="social-login">
+			<p>Or log in using your account from:</p>
+			<a href="#" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+		</div>
+	</div>
+
+   
+      
+
+	<script >
+		let arr2 = JSON.parse(localStorage.getItem("str"))
+			if(arr2===null){
+				arr2=[]
+
+			}
+
+
+function signIn() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    // Validate email and password
+    if (email == "" || password == "") {
+        alert("Please enter both email and password");
+        return false;
+    }
+
+    // Authenticate user
+	
+        // Redirect to home page or other relevant page
+     else  {
+        let ans = false
+    for(let i=0;i<arr2.length;i++){
+        if(email===arr2[i].email && password===arr2[i].password){
+            ans = true
+        }
+    }
+    if(ans == true){
+		alert("login sucessful")
+
+        window.location.assign("index.html")
+       
+        
+    }else{
+      
+        alert("Check password")
+		password.value= ""
+    }
+    }
+
+	
+}
+
+// function authenticateUser(email, password) {
+//     // This is where you would call your server-side authentication function
+//     // In this example, we will use a hardcoded username and password
+//    if (email == "test@example.com" && password == "password123") {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+    </script>
+</body>
+</html>

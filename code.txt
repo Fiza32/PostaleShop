@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Aeropostale Registration</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			margin-top: 50px;
+		}
+
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		label {
+			margin-top: 20px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			margin-top: 10px;
+			padding: 10px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			width: 300px;
+		}
+
+		button {
+			margin-top: 20px;
+			padding: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+			background-color: #0086b3;
+			color: white;
+			cursor: pointer;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			width: 300px;
+		}
+	</style>
+</head>
+
+<body>
+	<form id="registrationForm">
+		<label for="firstName">First Name:</label>
+		<input type="text" id="firstName" name="firstName" required>
+
+		<label for="lastName">Last Name:</label>
+		<input type="text" id="lastName" name="lastName" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+
+		<label for="password"> Confirm Password:</label>
+		<input type="password" id="confirmPassword" name="password" required>
+
+		<button type="submit">Apply</button>
+	</form>
+
+
+
+
+	<script>
+		let arr = []
+		let arr2 = JSON.parse(localStorage.getItem("str"))
+			if (arr2 === null) {
+				arr2 = []
+
+			}
+		// get the form element
+		const form = document.getElementById('registrationForm');
+
+		// add an event listener for when the form is submitted
+		form.addEventListener('submit', (event) => {
+			// prevent the default form submission behavior
+			event.preventDefault();
+
+			// get the form data
+			const formData = new FormData(event.target);
+			
+			// get the form values
+			let firstName = document.getElementById('firstName');
+			let lastName = document.getElementById('lastName');
+			let email = document.getElementById('email');
+			let password = document.getElementById('password');
+			let confirmPassword = document.getElementById('confirmPassword');
+			// perform some basic validation
+
+
+			// perform the registration logic here, e.g. make an API request to register the user
+			// replace this with your actual registration logic
+
+
+			let obj = {
+				name: firstName.value,
+				email: email.value,
+				password: password.value,
+				conpassword: confirmPassword.value
+			}
+			if (password.value === confirmPassword.value) {
+
+				arr2.push(obj)
+				localStorage.setItem("str", JSON.stringify(arr2))
+				window.location.assign("sigin.html")
+				alert("Signup Successful pls Login")
+			}
+			else {
+				alert("password doesn't match")
+			}
+
+
+			// clear the form
+			form.reset();
+
+
+		});
+
+
+	</script>
+</body>
+
+</html>
