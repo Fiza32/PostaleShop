@@ -1,0 +1,67 @@
+#flexi{
+    display: flex;
+}
+.maindiv{
+    display: flex;
+}
+.quatity{
+    display: flex;
+    
+}
+.itemscount>input{
+    width: 80px;
+    height: 30px;
+}
+.itemscount{
+    margin: 20px;
+}
+.price{
+    margin: 20px;
+}
+
+
+#comtaners{
+    width: 400px;
+    
+}
+.makec>img{
+    width: 100%;
+}
+.detals{
+    padding: 10px;
+    margin: 10px;
+    margin-top: 30px;
+}
+.makec{
+    margin-top: 60px;
+   
+}
+.paymen{
+    background-color: rgb(157, 175, 192);
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+}
+#CHECKOUT{
+    background-color: #1e3352;
+    border: none;
+    width: 400px;
+    height: 40px;
+    font-size: large;
+    color: aliceblue;
+    margin: 10px;
+    
+}
+#paypalbtn{
+    background-color: #ffc439;
+    border: none;
+    align-items: center;
+    margin: 10px;
+    
+}
+.paymen>h1,h2,h3{
+    color: #1e3352;
+}
+#instock{
+    color: green;
+}

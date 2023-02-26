@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/first.css">
+
+    
+</head>
+
+
+<body>
+    <div class="container">
+      
+        <div>
+            <label for="check">
+                <i class="fas fa-bars" id="hamberger"></i>
+                <i class="fas fa-times" id="cancelbtn"></i>
+            </label>
+
+            <aside>
+                <!-- <div class="logo">
+                    <img src="logo.jpeg" alt="">
+                    
+                </div> -->
+                <nav>
+                   
+                    <div class="nav_cont">
+                        <div class="nav_item">
+                            
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            
+                            <a href="customer.html">Customer</a>
+                            
+                        </div>
+                        <div class="nav_item">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <a href="order.html">Orders</a>
+                            
+                        </div>
+                        <div class="nav_item" id="active">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <a href="product.html">Products</a>
+                            
+                        </div>
+                        <div class="nav_item">
+                            <i class="fa-solid fa-percent"></i>
+                            <a href="discount.html">Discount</a>
+                            
+                        </div>
+                        <div class="nav_item">
+                            <i class="fa fa-usd" aria-hidden="true"></i>
+                            <a href="pricing.html">Pricing</a>
+                            
+                        </div>
+                    </div>
+                </nav>
+            
+            
+            </aside>
+        </div>
+
+        <main class="first">
+           <div class="body_part">
+                <header>
+                    <div class="left">
+                        <input type="search" name="" value="" id="searchInput" placeholder="Search here">
+                    </div>
+                    <div class="right">
+                        <i class="fa-solid fa-magnifying-glass" id="searchbtn"></i>
+                        <i class="fa-regular fa-circle-question"></i>
+                        <i class="fa-regular fa-bell"></i>
+                        <img onclick="redirectmain()" src="/Images/logo2.jpeg" alt="" style="width:50px;height:50px" class="col_img">
+                    </div>
+                </header>
+
+               
+           </div>
+
+           <div class="body_part1">
+                <div class="heading1">
+                    <div class="left">
+                        <h2>Products</h2>
+                        
+                    </div>
+                    <div class="right">
+                        <i class="fa-solid fa-plus" id="addProductbtn"></i>
+                        <h2>New Product</h2>
+                    </div>
+                </div>
+
+                <div class="heading2">
+                    <select name="" id="filteroption">
+                        <option value="">Filter and sort</option>
+                        <optgroup label="Name">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </optgroup>
+                       
+                        <optgroup label="Category">
+                            
+                                <option value="men">Men</option>
+                                <option value="women">Women</option>
+                                <option value="clearance">Clearance</option>
+                            
+                        </optgroup>
+                        <optgroup label="Quantity">
+                            <option value="low">Low-to-high</option>
+                            <option value="high">High-to-low</option>
+                        </optgroup>
+                        
+                       
+                    </select>
+
+                    <!-- <input type="search" name="" value=""> -->
+                </div>
+
+                <div class="table_data">
+                    <table class="product_table" >
+                        <thead>
+                            <tr>
+                                <th class="pic">Image</th>
+                                <th class="name">Name</th>
+                                <th class="coll">Category</th>
+                                <th class="inv">Quantity</th>
+                                <th class="ava">Availibility</th>
+                                <th class="update">Update</th>
+                                <th class="dele">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+                <div id="pagi_btn"> 
+                    <button  id="prev">Previous</button>
+                    <button  id="next">Next</button>
+                    
+                </div>
+              
+
+           </div>
+           
+        </main>
+    </div>
+
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+          <h2>Add Product</h2>
+  
+          <div class="form-element">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+  
+          <div class="form-element">
+            <label for="name">Description</label>
+            <input type="text" id="desc" required />
+          </div>
+          <div class="form-element">
+            <label for="name">quantity</label>
+            <input type="number" id="quantity" required />
+          </div>
+          <div class="form-element">
+            <label for="name">Price</label>
+            <input type="number" id="price" required />
+          </div>
+          <div class="form-element">
+            <label for="name">Comp Price</label>
+            <input type="number" id="compprice" required />
+          </div>
+          <div class="form-element">
+            <label for="name">Category</label>
+            <input type="text" id="category" required />
+          </div>
+          <div class="form-element">
+            <label for="name">Color</label>
+            <input type="text" id="color" required />
+          </div>
+
+  
+          <div class="form-element">
+            <input type="submit" id="product_submit" />
+          </div>
+        </div>
+      </div>
+  
+     
+      
+  
+</body>
+
+<script>
+
+    let url = "https://63c9170d320a0c4c9540575f.mockapi.io/products";
+
+    let productArr = [];
+    let isupdateid;
+    let isupdate = false;
+
+    let currpage = 1;
+    let totalpage = 0;
+
+document.getElementById("addProductbtn").addEventListener("click",function(){
+    document.querySelector(".popup").classList.add("active");
+})
+document.querySelector(".close-btn").addEventListener("click",function(){
+    document.querySelector(".popup").classList.remove("active");
+});
+
+let parent = document.querySelector("tbody");
+
+
+// adding data to server
+
+document.getElementById("product_submit").addEventListener("click",function(){
+
+    let name = document.getElementById("name").value;
+    let badge = document.getElementById("desc").value;
+    let Compprice = document.getElementById("compprice").value;
+    let price = document.getElementById("price").value;
+    let colors = document.getElementById("color").value;
+    let category = document.getElementById("category").value;
+    let quantity = document.getElementById("quantity").value;
+
+    // console.log(name,badge,Compprice,price,colors,category,quantity);
+
+    let obj = {
+        src:"https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dwa0d6efa1/60211060_035_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
+        badge : badge,
+        name : name,
+        Compvalue : "$"+Compprice,
+        price : "$"+price,
+        ratings : 0,
+        color: colors,
+        category : category,
+        customerId : "premkumar",
+        totalquantity : quantity,
+        status : "pending",
+        ispurchased : true
+    }
+
+    if(name != "" && badge != "" && Compprice != "" && price != "" 
+    && colors != "" && category != "" && quantity != ""){
+
+        if(isupdate){
+            updateproduct(obj,isupdateid);
+            isupdate = false;
+        }else{
+            postProduct(obj);
+        }
+
+        
+        document.querySelector(".popup").classList.remove("active");
+        
+    }else{
+        alert("Every field is required!")
+    }
+
+
+   
+})
+
+
+async function postProduct(product){
+    try{
+        let res = await fetch(url,{
+            method:"POST",
+            headers : {
+                "Content-type":"application/json",
+            },
+            
+            body:JSON.stringify(product)
+        });
+        let out = await res.json();
+       
+        console.log(out);
+      
+    }catch(err){
+        alert(JSON.stringify(err))
+    }
+
+}
+
+// fetching data from server
+async function getdata(pageNumber=1){
+    
+   try{
+    let res = await fetch(url);
+    res = await res.json();
+    productArr = res;
+    totalpage = Math.ceil(productArr.length/6);
+
+
+    let first = 6*(pageNumber-1);
+    let second = pageNumber*6
+    let sliced = res.slice(first,second);
+    console.log(sliced);
+    display(sliced);
+
+
+   }catch(err){
+    console.log(JSON.stringify(err))
+   }
+}
+
+
+window.addEventListener("load",function(){
+    getdata();
+})
+
+
+function display(data){
+
+    parent.innerText = "";
+
+    data.forEach(element => {
+        let tr = document.createElement("tr");
+
+        let piccol = document.createElement("td");
+        let pic = document.createElement("img");
+        pic.classList.add("col_img")
+        pic.classList.add("pic");
+        piccol.append(pic);
+        pic.src = element.src;
+
+        let name = document.createElement("td");
+        name.classList.add("name");
+        name.textContent = element.name;
+
+        let category = document.createElement("td");
+        category.classList.add("coll")
+        category.textContent = element.category;
+
+        let quantity = document.createElement("td");
+        quantity.classList.add("inv");
+
+        quantity.textContent = element.totalquantity;
+
+        let availibility = document.createElement("td");
+        availibility.classList.add("ava");
+        // console.log(typeof element.quantity)
+        if(element.totalquantity > 0){
+            availibility.textContent = "Available";
+        }else{
+            availibility.textContent = "Not Available";
+        }
+        
+
+        let edit = document.createElement("td");
+        edit.classList.add("update");
+        edit.textContent = "Edit";
+        edit.addEventListener("click",function(){
+            document.querySelector(".popup").classList.add("active");
+
+
+            fillupdateform(element.id);
+
+        })
+
+        let deleteitem = document.createElement("td");
+        deleteitem.classList.add("dele")
+        deleteitem.textContent = "Delete";
+        deleteitem.addEventListener("click",async function(){
+            
+            if(window.confirm("are u sure")){
+                let res = await fetch(`${url}/${element.id}`,{
+                    method : "DELETE",
+                    headers :{
+                        "Content-type":"application/json"
+                    }
+                    
+                })
+
+                res = await res.json();
+                console.log(res);
+                getdata()
+            }
+        })
+
+        tr.append(piccol,name,category,quantity,availibility,edit,deleteitem);
+        parent.append(tr)
+    });
+
+}
+//  searching
+
+
+document.getElementById("searchbtn").addEventListener("click",function(){
+
+    let searchtext = document.getElementById("searchInput").value;
+    let filterarr = productArr.filter((ele)=>{
+        if(ele.name.toLowerCase().includes(searchtext.toLowerCase())){
+            return true;
+        }
+
+    })
+
+
+    display(filterarr)
+
+})
+
+// filterproduct
+
+
+document.getElementById("filteroption").addEventListener("change",function(){
+    let selectedValue = document.getElementById("filteroption").value;
+    console.log(selectedValue)
+    let filarr;
+    if(selectedValue=="low"){
+
+        productArr.sort((a,b)=>{
+            
+            return Number(a.totalquantity)-Number(b.totalquantity)
+        })
+
+        console.log(productArr)
+        display(productArr);
+
+    }else if(selectedValue=="high"){
+        productArr.sort((a,b)=>{
+            
+            return Number(b.totalquantity)-Number(a.totalquantity)
+        })
+
+        console.log(productArr)
+        display(productArr);
+    }
+    else if(selectedValue=="desc"){
+        productArr.sort((a,b)=>{
+            
+            if(a.name.toLowerCase()>b.name.toLowerCase()){
+                return -1;
+            }else if(a.name.toLowerCase()<b.name.toLowerCase()){
+                return 1;
+            }else {
+                return 0;
+            }
+            
+        })
+
+        console.log(productArr)
+        display(productArr);
+    }else if(selectedValue=="asc"){
+        productArr.sort((a,b)=>{
+            
+            if(a.name.toLowerCase()>b.name.toLowerCase()){
+                return 1;
+            }else if(a.name.toLowerCase()<b.name.toLowerCase()){
+                return -1;
+            }else {
+                return 0;
+            }
+            
+        })
+
+        console.log(productArr)
+        display(productArr);
+    }else if(selectedValue=="men"){
+        let menpro = productArr.filter((ele)=>{
+            return ele.category==selectedValue
+        })
+
+        display(menpro);
+
+    }else if(selectedValue=="women"){
+        let womenpro = productArr.filter((ele)=>{
+            return ele.category==selectedValue
+        })
+        display(womenpro);
+    }else if(selectedValue=="clearance"){
+        let clearancepro = productArr.filter((ele)=>{
+            return ele.category==selectedValue
+        })
+        display(clearancepro);
+    }
+    
+});
+
+
+async function fillupdateform(id){
+
+    isupdate = true;
+    isupdateid = id;
+    let res = await fetch(`${url}/${id}`);
+    let  producttoupdate = await res.json();
+    console.log(producttoupdate)
+    document.getElementById("name").value = producttoupdate.name;
+    document.getElementById("desc").value = producttoupdate.badge;
+
+
+    document.getElementById("compprice").value = Number(producttoupdate.Compvalue.slice(1));
+    document.getElementById("price").value = Number(producttoupdate.price.slice(1));
+    document.getElementById("color").value = producttoupdate.color;
+    document.getElementById("category").value = producttoupdate.category;
+     document.getElementById("quantity").value = producttoupdate.totalquantity;
+ 
+
+
+            
+
+}
+
+async function updateproduct(product,id){
+    let res = await fetch(`${url}/${id}`,{
+        method : "PUT",
+        headers : {
+            "Content-type":"application/json"
+        },
+        body :JSON.stringify(
+            product
+        )
+    });
+
+    getdata();
+}
+
+function showPagination(totalpro,onepageproduct){
+
+    let btnparent = document.getElementById("pagi_btn");
+    let totalbtn = Math.ceil(totalpro/onepageproduct);
+
+    console.log(totalbtn)
+    btnparent.innerText = "";
+
+    for(let i=1;i<=totalbtn;i++){
+        let btn = document.createElement("button");
+        btn.classList.add("pagi_btn1");
+        btn.textContent = i;
+
+
+
+        btn.addEventListener("click",function(e){
+
+            // document.querySelectorAll("pagi_btn1").classList.remove("pagin_active");
+            btn.classList.add("pagin_active")
+            console.log(i);
+            getdata(i);
+        })
+        btnparent.append(btn);
+    }
+
+
+}
+
+document.getElementById("prev").addEventListener("click",function(){
+
+    // console.log(currpage,totalpage)
+    // if(currpage==1){
+    //     this.setAttribute("disabled",true)
+    // }else{
+    //     this.setAttribute("disabled",false)
+    // }
+    document.getElementById("prev").classList.add("pagi_active");
+    setTimeout(()=>{
+        document.getElementById("prev").classList.remove("pagi_active");
+    },500)
+    if(currpage>0){
+        currpage--;
+        getdata(currpage)
+    }
+    // console.log(currpage,totalpage)
+})
+
+document.getElementById("next").addEventListener("click",function(){
+    
+    document.getElementById("next").classList.add("pagi_active");
+    setTimeout(()=>{
+        document.getElementById("next").classList.remove("pagi_active");
+    },500)
+    // console.log(currpage,totalpage)
+    // if(currpage==totalpage){
+    //     this.setAttribute("disabled",true)
+    // }else{
+    //     this.setAttribute("disabled",false)
+    // }
+    if(currpage<totalpage){
+        currpage++;
+        getdata(currpage)
+    }
+    // console.log(currpage,totalpage)
+
+})
+
+function redirectmain(){
+    window.location.assign("index.html")
+}
+
+document.getElementById("hamberger").addEventListener("click",function(){
+
+document.getElementById("hamberger").classList.add("hamberger_active");
+
+
+})
+
+
+</script>
+</html>

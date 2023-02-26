@@ -1,0 +1,62 @@
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-top: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+button[type="submit"] {
+	background-color: #1E3352;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.social-login {
+	margin-top: 20px;
+}
+
+.social-login p {
+	margin-bottom: 10px;
+}
+
+.social-login a {
+	display: inline-block;
+	background-color: #0080ff;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.social-login a i {
+	margin-right: 5px;
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aeropostale Registration</title>
+	<link rel="stylesheet" href="/CSS/homepage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/CSS/swiper-element-bundle.min.css" />
+</head>
+
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #f2f2f2;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 36px;
+		margin-top: 50px;
+	}
+
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 50px;
+	}
+
+	label {
+		margin-top: 20px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		margin-top: 10px;
+		padding: 10px;
+		font-size: 16px;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+		width: 300px;
+	}
+
+	input[type="submit"] {
+		margin-top: 20px;
+		padding: 10px;
+		font-size: 18px;
+		font-weight: bold;
+		border: none;
+		border-radius: 5px;
+		background-color: #0086b3;
+		color: white;
+		cursor: pointer;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+		width: 300px;
+		margin-bottom: 8px;
+	}
+</style>
+
+<body>
+	<form id="registrationForm">
+		<label for="firstName">First Name:</label>
+		<input type="text" id="firstName" name="firstName" required>
+
+		<label for="lastName">Last Name:</label>
+		<input type="text" id="lastName" name="lastName" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+
+		<label for="password"> Confirm Password:</label>
+		<input type="password" id="confirmPassword" name="password" required>
+
+		<input type="submit"></input>
+
+		<a href="sigin.html">Already a user</a>
+	</form>
+
+
+
+	<div class="footerbody">
+		<footer>
+			<div class="footer-container">
+				<div class="footer-item account">
+					<div class="content-asset">
+						<ul class="menu-footer content menu-footer-feedback-parent">
+							<li>
+								<a href="#">
+									<img src="/Images/location.svg" alt="" class="cont-img"> Store Locater
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="/Images/Orderstatus.svg" alt="" class="cont-img"> Order Status
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="/Images/Giftcard.svg" alt="" class="cont-img"> Gift Cards/Balance
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="/Images/Feedback.svg" alt="" class="cont-img"> Feedback
+								</a>
+							</li>
+						  </ul>
+						  
+					</div>
+				</div>
+				<div class="footer-item support footer-toggle">
+					<div class="content-asset">
+						<h5 class="title">Shopping Help</h5>
+						<ul class="menu-footer content">
+							<li><a href="">Help Desk</a></li>
+							<li><a href="">Returns & Exchanges</a></li>
+							<li><a href="">Prices & Price Match Policy</a></li>
+							<li><a href="">Shipping & Handling</a></li>
+							<li><a href="">Size Charts</a></li>
+							<li><a href="">Buy Online, Pick Up In Store</a></li>
+							<li><a href="">Student Discount</a></li>
+						</ul>
+		
+					</div>
+				</div>
+				<div class="footer-item contact footer-toggle">
+					<div class="content-asset">
+						<h5 class="title">Questions?</h5>
+						<ul class="menu-footer content">
+						<li>
+								<a href="#"><p class="bold-p">Call Us</p></a>
+							<div>1.877.289.2376</div>
+						</li>
+						<li>
+							<a href="">
+								<p class="bold-p">Contact Us</p>
+							</a>
+						</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-item about footer-toggle">
+					<div class="content-asset">
+						<h5 class="title">About Us</h5>
+						<ul class="menu-footer content">
+							<li><a href="#">About Aeropostale</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Supply Chain</a></li>
+							<li><a href="#">Aero Impact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-item footer-social-and-email">
+					<div class="content-asset">
+						<ul class="menu-footer content footer-email-singup">
+							<li>
+								<h5 class="title">Get the latest styles & offers:</h5>
+								<form id="email-signup" novalidate="novalidate">
+									<label for="email-address">email</label>
+									<input type="email" id="email-address" class="input-text" placeholder="Enter Email" value="" required="">
+									<button type="submit" name="home-email" value="Submit" class="email-signup-btn">Subscribe</button>
+							<span id="email-address-error" class="error">This field is required.</span>
+								</form>
+								<p class="footer-email-singup-policy">
+									For more Information, please see our Privacy Policy. California residents, see our California Privacy Notice and Do Not Sell Personal Information Page.
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!-- End content-asset -->
+					<div class="content-asset">
+						<ul class="menu-footer content menu-footer-social">
+							<li>
+								<h5 class="title">Follow Us</h5>
+								<div class="social-media-links">
+									<a href="https://www.instagram.com/aeropostale/?hl=en" target="_blank"><img src="/Images/instagram-icon.svg" alt="Instagram"></a>
+	
+									<a href="https://twitter.com/aeropostale" target="_blank"><img src="/Images/twitter-icon.svg" alt="Twitter"></a>
+	
+									<a href="https://www.facebook.com/Aeropostale/" target="_blank"><img src="/Images/facebook-icon.svg" alt="Facebook"></a>
+	
+									<a href="https://www.youtube.com/user/A87Video" target="_blank"><img src="/Images/youtube-icon.svg" alt="Youtube"></a>
+	
+									<a href="https://www.tiktok.com/@aeropostale" target="_blank"><img src="/Images/tiktok-icon.svg" alt=""></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+		<!-- Bottom Footer -->
+		<div class="content-asset">
+			<div class="footer-bottom content">
+				<ul class="footer-bottom-list">
+					<li><a href="">Don't Sell My Information</a></li>
+					<li><a href="">Terms of Use</a></li>
+					<li><a href="">Accessibility Statement</a></li>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">CA Transparency Act</a></li>
+					<li>© 2023 Aeropostale. All Rights Reserved.</li>
+				</ul>
+			</div>
+		</div>
+	   </div>
+	
+</body>
+
+
+<script>
+	let arr = [];
+
+	let url = "https://63c9170d320a0c4c9540575f.mockapi.io/users";
+	let arr2 = JSON.parse(localStorage.getItem("str"))
+		if (arr2 === null) {
+			arr2 = []
+
+		}
+	// get the form element
+	const form = document.getElementById('registrationForm');
+
+	// add an event listener for when the form is submitted
+	form.addEventListener('submit', (event) => {
+		// prevent the default form submission behavior
+		event.preventDefault();
+
+		// get the form data
+		const formData = new FormData(event.target);
+		
+		// get the form values
+		let firstName = document.getElementById('firstName').value;
+		let lastName = document.getElementById('lastName').value;
+		let email = document.getElementById('email').value;
+		let password = document.getElementById('password').value;
+		let confirmPassword = document.getElementById('confirmPassword').value;
+		// perform some basic validation
+
+
+		// perform the registration logic here, e.g. make an API request to register the user
+		// replace this with your actual registration logic
+
+
+		if(firstName != "" && lastName != "" && email !="" && password != ""
+		 && confirmPassword != ""){
+
+
+			
+			if (password.value === confirmPassword.value) {
+				let obj = {
+					name: firstName + " "+ lastName,
+					email: email,
+					password: password,
+					orders:[]
+				}
+
+				pushuser(obj);
+				window.location.assign("sigin.html")
+				console.log(obj)
+			}else{
+				return alert("password doesn't match")
+			}
+			
+			
+
+		 }else{
+			alert("Every field is required")
+		 }
+
+
+		
+
+
+		// clear the form
+		form.reset();
+
+
+	});
+
+
+	async function pushuser(user){
+		try{
+			let res = await fetch(url,{
+				method:"POST",
+				headers : {
+					"Content-type":"application/json",
+				},
+				
+				body:JSON.stringify(user)
+			});
+			let out = await res.json();
+		
+			console.log(out);
+		
+		}catch(err){
+			alert(JSON.stringify(err))
+		}
+	}
+
+</script>
+
+</html>
