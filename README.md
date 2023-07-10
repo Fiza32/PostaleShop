@@ -1,7 +1,9 @@
 # somber-sugar-2510
 
 Project Description: AeroPostale Clone
+
 Project Name: PostaleShop
+
 Project Deployed Link: https://joyful-figolla-79165e.netlify.app/
 
 
